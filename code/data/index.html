@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSocket Button</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>WebSocket Counter</h1>
+  <button onclick="sendClick()">Click me!</button>
+  <p id="counter">Counter: 0</p>
+
+  <script>
+    let ws = new WebSocket("ws://" + location.hostname + "/ws");
+
+    ws.onopen = () => {
+      console.log("WebSocket connected");
+    };
+
+    ws.onmessage = (event) => {
+      console.log("Received: " + event.data);
+      if (event.data.startsWith("counter:")) {
+        const count = event.data.split(":")[1];
+        document.getElementById("counter").innerText = "Counter: " + count;
+      }
+    };
+
+    ws.onclose = () => {
+      console.log("WebSocket disconnected");
+    };
+
+    function sendClick() {
+      if (ws.readyState === WebSocket.OPEN) {
+        ws.send("button_click");
+      }
+    }
+  </script>
+</body>
+</html>
