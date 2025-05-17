@@ -5,7 +5,7 @@
 #include "webserverBike.h" //funzioni che gestiscono il web server
 #include "WebAP.h"         //funzioni che gestiscono l'access point wifi
 #include "bikeUtils.h"     //funzioni che gestiscono la conversione del testo in matrici di byte e gestiscono le elettrovalvole
-#include "myUtils.h"       //funzioni che gestiscono i pin, dipendono dalla esp32/arduino utilizzata todo rename
+#include "freenoveEspUtils.h"       //funzioni che gestiscono i pin, dipendono dalla esp32/arduino utilizzata todo rename
 #include "htmlVars.h"      //funzioni per le variabili a supporto delle pagine web e dei parametri GET todo SPIFFS?
 
 // per interrupt debounce (magnete rilevato o tasto magnete)
@@ -39,7 +39,7 @@ void magnet_detect() // This function is called whenever a magnet is detected
 
 void setup()
 {
-  ACwireSetup();                                         // funzione che setta i pin nella configurazione AC
+  freenoveEspWireSetup();                                         // funzione che setta i pin nella configurazione AC
   wifiSetup();                                           // crea access point wifi
   setupWebServer();                                      // crea il webserver e lo avvia
   attachInterrupt(Magneto, magnet_detect, FALLING);      // interrupt per il magneto
