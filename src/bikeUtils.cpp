@@ -50,7 +50,6 @@ void convertText(String messaggio, byte msgCode[])
     // Serial.print("char to write: ");
     // Serial.println(charToWrite);
     addChar(charToWrite, msgCode); //
-    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   // Add a little space after each character             //
   // todo:inutile? non credo sia dopo ogni carattere ma penso sia alla fine del testo AC
@@ -125,6 +124,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "2")
   {
@@ -135,6 +135,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0110001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "3")
   {
@@ -145,6 +146,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0110110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "4")
   {
@@ -155,6 +157,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000100, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "5")
   {
@@ -165,6 +168,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1001110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "6")
   {
@@ -175,6 +179,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0100110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "7")
   {
@@ -185,6 +190,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1100000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "8")
   {
@@ -195,6 +201,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0110110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "9")
   {
@@ -205,6 +212,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0111110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "0")
   {
@@ -215,6 +223,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0111110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "A")
   {
@@ -225,6 +234,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111111, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "B")
   {
@@ -235,6 +245,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0110110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "C")
   {
@@ -245,6 +256,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0100010, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "D")
   {
@@ -255,6 +267,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0111110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "E")
   {
@@ -265,6 +278,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1000001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "F")
   {
@@ -275,6 +289,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "G")
   {
@@ -285,6 +300,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0100110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "H")
   {
@@ -295,6 +311,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111111, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "I")
   {
@@ -305,6 +322,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "J")
   {
@@ -315,6 +333,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "K")
   {
@@ -325,6 +344,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1000001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "L")
   {
@@ -335,6 +355,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "M")
   {
@@ -345,6 +366,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111111, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "N")
   {
@@ -355,6 +377,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111111, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "O")
   {
@@ -365,6 +388,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0111110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "P")
   {
@@ -375,6 +399,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0110000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "Q")
   {
@@ -385,6 +410,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0111101, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "R")
   {
@@ -395,6 +421,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0110001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "S")
   {
@@ -405,6 +432,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0100110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "T")
   {
@@ -415,6 +443,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "U")
   {
@@ -425,6 +454,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "V")
   {
@@ -435,6 +465,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111100, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "W")
   {
@@ -445,6 +476,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1111110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "X")
   {
@@ -455,6 +487,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1100011, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "Y")
   {
@@ -465,6 +498,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1110000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "Z")
   {
@@ -475,6 +509,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1000011, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "Z")
   {
@@ -485,6 +520,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1000011, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == " ")
   {
@@ -495,6 +531,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == ".")
   {
@@ -505,6 +542,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "_")
   {
@@ -515,6 +553,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "-")
   {
@@ -525,6 +564,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "!")
   {
@@ -535,6 +575,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "(")
   {
@@ -545,6 +586,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B1000001, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == ")")
   {
@@ -555,6 +597,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "%")
   {
@@ -565,6 +608,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0100011, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == ",")
   {
@@ -575,6 +619,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "?")
   {
@@ -585,6 +630,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "#")
   {
@@ -595,6 +641,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0010100, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "@")
   {
@@ -605,6 +652,7 @@ void addChar(String y, byte msgCode[])
     addColumn(B0111000, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
   else if (y == "$")
   {
@@ -615,5 +663,6 @@ void addChar(String y, byte msgCode[])
     addColumn(B0100110, msgCode);
     addColumn(B0000000, msgCode);
     addColumn(B0000000, msgCode);
+    addColumn(B00000000, msgCode); // aggiunto per avere lettere a 8 istanti AC
   }
 }
