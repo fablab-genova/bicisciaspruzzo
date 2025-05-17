@@ -1,5 +1,5 @@
 #include "bikeUtils.h"
-#include "myUtils.h"
+#include "freenoveEspUtils.h"
 int columnNum = -1; // gestisce il numero della colonna
 
 void addDecor(byte grigliaA[], byte grigliaB[], byte msgCode[])
@@ -66,6 +66,17 @@ void closeAll()
   digitalWrite(LED5, LOW);
   digitalWrite(LED6, LOW);
   digitalWrite(LED7, LOW);
+}
+void openAll()
+{
+  digitalWrite(LED0, HIGH);
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
+  digitalWrite(LED3, HIGH);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, HIGH);
+  digitalWrite(LED6, HIGH);
+  digitalWrite(LED7, HIGH);
 }
 // questa fire e' quella di bikelangelo, apre le elettrovalvole ma non le chiude.
 void fire(byte msgCode[], int c)
