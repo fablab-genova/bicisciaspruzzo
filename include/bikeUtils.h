@@ -6,7 +6,8 @@
 #define BIKE_UTILS_H
 // chiude tutte le valvole
 void closeAll();
-
+// chiude tutte le valvole
+void openAll();
 // stampa sulla seriale il carattere
 void printCharacters(byte msgCode[], int dimensioneMsg);
 
